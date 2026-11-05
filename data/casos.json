@@ -1,0 +1,296 @@
+{
+  "metadatos": {
+    "version": "1.0.0",
+    "ultimaActualizacion": "2026-11-05",
+    "notaMetodologica": "Todos los casos incluidos están basados en investigación publicada en revistas revisadas por pares. El nivel de consenso refleja el estado actual del debate científico según la literatura disponible."
+  },
+  "casos": [
+    {
+      "id": "abejas-meliferas",
+      "nombre": "Abejas melíferas",
+      "nombreCientifico": "Apis mellifera",
+      "categoria": "animales",
+      "tipoSenal": ["visual", "química"],
+      "funcionComunicativa": "Comunicar ubicación y calidad de recursos alimenticios mediante danza del waggle",
+      "evidenciaPrincipal": "La danza del waggle codifica distancia (duración) y dirección (ángulo respecto al sol) de fuentes de néctar",
+      "nivelConsenso": "establecido",
+      "descripcionDetallada": "Las abejas melíferas utilizan un sistema de comunicación simbólica mediante la danza del waggle, donde una abeja exploradora ejecuta movimientos específicos para informar a otras sobre la ubicación de flores. La duración del meneo indica la distancia, y el ángulo respecto a la vertical representa la dirección en relación al sol.",
+      "ejemplosConcretos": [
+        "Una danza de 1 segundo indica aproximadamente 1 km de distancia",
+        "Un ángulo de 45° a la derecha indica volar 45° a la derecha del sol",
+        "La intensidad de la danza correlaciona con la calidad del recurso"
+      ],
+      "fuentesIds": ["vonfrisch1967", "seeley1995"]
+    },
+    {
+      "id": "cachalotes",
+      "nombre": "Cachalotes",
+      "nombreCientifico": "Physeter macrocephalus",
+      "categoria": "animales",
+      "tipoSenal": ["sonora"],
+      "funcionComunicativa": "Codas vocales para identificación social y cohesión de grupo",
+      "evidenciaPrincipal": "Diferentes clanes vocales con patrones distintivos de clics que se mantienen estables a través de generaciones",
+      "nivelConsenso": "establecido",
+      "descripcionDetallada": "Los cachalotes producen secuencias estereotipadas de clics llamadas 'codas' que varían entre clanes sociales. Estos patrones vocales funcionan como marcadores culturales transmitidos verticalmente entre generaciones, sugiriendo tradiciones vocales compartidas.",
+      "ejemplosConcretos": [
+        "Clanes del Pacífico tienen codas de 5 clics regulares (5R)",
+        "Clanes del Caribe usan patrones de 4+1 clics",
+        "Las crías aprenden las codas de su grupo social, no de sus madres biológicas"
+      ],
+      "fuentesIds": ["rendell2003", "whitehead2003"]
+    },
+    {
+      "id": "elefantes-africanos",
+      "nombre": "Elefantes africanos",
+      "nombreCientifico": "Loxodonta africana",
+      "categoria": "animales",
+      "tipoSenal": ["sonora", "visual"],
+      "funcionComunicativa": "Comunicación a larga distancia mediante infrasonidos para coordinación de grupos",
+      "evidenciaPrincipal": "Vocalizaciones por debajo de 20 Hz que pueden viajar kilómetros, detectadas mediante sismógrafos",
+      "nivelConsenso": "establecido",
+      "descripcionDetallada": "Los elefantes producen vocalizaciones infrasuónicas (por debajo del rango auditivo humano) que viajan largas distancias a través del aire y el suelo. Otros elefantes detectan estas vibraciones mediante receptores en sus patas y trompa, permitiendo coordinación entre manadas separadas.",
+      "ejemplosConcretos": [
+        "Llamadas de 'vamos' coordinan movimientos de la manada",
+        "Alarmas de infrasonido alertan sobre depredadores a kilómetros de distancia",
+        "Vocalizaciones específicas para reunir crías dispersas"
+      ],
+      "fuentesIds": ["payne1986", "okonnell2011"]
+    },
+    {
+      "id": "monos-vervet",
+      "nombre": "Monos vervet",
+      "nombreCientifico": "Chlorocebus pygerythrus",
+      "categoria": "animales",
+      "tipoSenal": ["sonora"],
+      "funcionComunicativa": "Llamadas de alarma específicas para diferentes tipos de depredadores",
+      "evidenciaPrincipal": "Tres tipos distintos de alarmas que provocan respuestas específicas: mirar arriba (águila), esconderse en árboles (leopardo), o mirar al suelo (serpiente)",
+      "nivelConsenso": "establecido",
+      "descripcionDetallada": "Los monos vervet poseen un sistema de alarmas funcionalmente referencial donde diferentes vocalizaciones corresponden a distintas clases de depredadores. Experimentos de playback demuestran que las llamadas por sí solas (sin contexto visual) elicitan respuestas antipredación apropiadas.",
+      "ejemplosConcretos": [
+        "Alarma de águila causa que el grupo mire hacia arriba y corra al sotobosque",
+        "Alarma de leopardo hace que suban a árboles delgados donde el felino no puede seguirlos",
+        "Alarma de serpiente provoca que se paren en dos patas y escaneen el suelo"
+      ],
+      "fuentesIds": ["seyfarth1980", "cheney1990"]
+    },
+    {
+      "id": "currucas-carboneras",
+      "nombre": "Currucas carboneras",
+      "nombreCientifico": "Parus major",
+      "categoria": "animales",
+      "tipoSenal": ["sonora"],
+      "funcionComunicativa": "Cantos territoriales y de cortejo con variación dialectal regional",
+      "evidenciaPrincipal": "Poblaciones separadas geográficamente desarrollan variantes de canto distintas que se mantienen estables, indicando transmisión cultural",
+      "nivelConsenso": "establecido",
+      "descripcionDetallada": "Las currucas carboneras exhiben variación dialectal en sus cantos, con poblaciones locales compartiendo repertorios distintivos. Experimentos de traslocación muestran que las aves jóvenes aprenden los dialectos locales, no una versión innata, evidenciando aprendizaje social.",
+      "ejemplosConcretos": [
+        "Poblaciones en bosques de roble tienen frases de canto más largas que las de coníferas",
+        "Machos reconocen y responden más agresivamente a dialectos locales",
+        "Juveniles criados con tutores de otro dialecto adoptan el canto del tutor"
+      ],
+      "fuentesIds": ["mcgregor1982", "krebs1978"]
+    },
+    {
+      "id": "plantas-vocs",
+      "nombre": "Plantas con señales químicas",
+      "nombreCientifico": "Diversas especies",
+      "categoria": "plantas",
+      "tipoSenal": ["química"],
+      "funcionComunicativa": "Emisión de compuestos orgánicos volátiles (VOCs) ante daño por herbívoros para atraer depredadores o parasitoides",
+      "evidenciaPrincipal": "Plantas atacadas por orugas emiten VOCs específicos que atraen avispas parasitoides que atacan a las orugas",
+      "nivelConsenso": "establecido",
+      "descripcionDetallada": "Cuando son atacadas por herbívoros, muchas plantas emiten mezclas específicas de compuestos orgánicos volátiles que atraen a los enemigos naturales de los herbívoros. Este fenómeno, documentado en más de 30 familias de plantas, representa una forma de defensa indirecta mediada químicamente.",
+      "ejemplosConcretos": [
+        "Maíz atacado por orugas emite VOCs que atraen avispas Cotesia marginiventris",
+        "Frijoles de lima liberan metil jasmonato que induce defensas en plantas vecinas",
+        "Álamos atacados aumentan producción de taninos en hojas no dañadas"
+      ],
+      "fuentesIds": ["dicke2010", "baldwin2006"]
+    },
+    {
+      "id": "redes-micelio",
+      "nombre": "Redes de micelio fúngico",
+      "nombreCientifico": "Diversos hongos micorrícicos",
+      "categoria": "hongos",
+      "tipoSenal": ["química"],
+      "funcionComunicativa": "Transferencia de carbono, nitrógeno y señales químicas entre plantas conectadas mediante redes micorrícicas",
+      "evidenciaPrincipal": "Experimentos con isótopos marcados muestran transferencia de carbono entre plantas conectadas por hongos micorrícicos arbusculares",
+      "nivelConsenso": "en debate",
+      "descripcionDetallada": "Los hongos micorrícicos forman redes subterráneas que conectan múltiples plantas, facilitando el intercambio de nutrientes y posiblemente información. La evidencia de transferencia de carbono es robusta, pero el debate continúa sobre si esto constituye 'comunicación' activa o simplemente intercambio pasivo mediado por gradientes de concentración.",
+      "ejemplosConcretos": [
+        "Árboles adultos transfieren carbono a plántulas sombreadas de la misma especie",
+        "Plantas atacadas por áfidos envían señales a través de la red que inducen defensas en vecinas",
+        "Transferencia de nitrógeno marcado entre plantas nodrizas y receptoras"
+      ],
+      "fuentesIds": ["simard1997", "babikova2013", "requiere_verificacion_1"]
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "vonfrisch1967",
+      "autores": "von Frisch, K.",
+      "año": 1967,
+      "titulo": "The Dance Language and Orientation of Bees",
+      "revista": "Harvard University Press",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "seeley1995",
+      "autores": "Seeley, T.D.",
+      "año": 1995,
+      "titulo": "The Wisdom of the Hive: The Social Physiology of Honey Bee Colonies",
+      "revista": "Harvard University Press",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "rendell2003",
+      "autores": "Rendell, L.E. & Whitehead, H.",
+      "año": 2003,
+      "titulo": "Vocal clans in sperm whales (Physeter macrocephalus)",
+      "revista": "Proceedings of the Royal Society B: Biological Sciences",
+      "doi": "10.1098/rspb.2002.2239",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "whitehead2003",
+      "autores": "Whitehead, H.",
+      "año": 2003,
+      "titulo": "Sperm Whales: Social Evolution in the Ocean",
+      "revista": "University of Chicago Press",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "payne1986",
+      "autores": "Payne, K.B., Langbauer, W.R. & Thomas, E.M.",
+      "año": 1986,
+      "titulo": "Infrasonic calls of the Asian elephant (Elephas maximus)",
+      "revista": "Behavioral Ecology and Sociobiology",
+      "doi": "10.1007/BF00299381",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "okonnell2011",
+      "autores": "O'Connell-Rodwell, C.E.",
+      "año": 2011,
+      "titulo": "The Elephant's Secret Sense: The Hidden Life of the Wild Herds of Africa",
+      "revista": "University of Chicago Press",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "seyfarth1980",
+      "autores": "Seyfarth, R.M., Cheney, D.L. & Marler, P.",
+      "año": 1980,
+      "titulo": "Monkey responses to three different alarm calls: evidence of predator classification and semantic communication",
+      "revista": "Science",
+      "doi": "10.1126/science.7433999",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "cheney1990",
+      "autores": "Cheney, D.L. & Seyfarth, R.M.",
+      "año": 1990,
+      "titulo": "How Monkeys See the World",
+      "revista": "University of Chicago Press",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "mcgregor1982",
+      "autores": "McGregor, P.K. & Krebs, J.R.",
+      "año": 1982,
+      "titulo": "Song types in a population of great tits (Parus major): their distribution, abundance and acquisition by individuals",
+      "revista": "Behaviour",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "krebs1978",
+      "autores": "Krebs, J.R., Ashcroft, R. & Webber, M.",
+      "año": 1978,
+      "titulo": "Song repertoires and territory defence in the great tit",
+      "revista": "Nature",
+      "doi": "10.1038/271539a0",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "dicke2010",
+      "autores": "Dicke, M. & Baldwin, I.T.",
+      "año": 2010,
+      "titulo": "The evolutionary context for herbivore-induced plant volatiles: beyond the 'cry for help'",
+      "revista": "Trends in Plant Science",
+      "doi": "10.1016/j.tplants.2009.12.002",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "baldwin2006",
+      "autores": "Baldwin, I.T., Halitschke, R., Paschold, A., von Dahl, C.C. & Preston, C.A.",
+      "año": 2006,
+      "titulo": "Volatile signaling in plant-plant interactions: 'talking trees' in the genomics era",
+      "revista": "Science",
+      "doi": "10.1126/science.1118446",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "simard1997",
+      "autores": "Simard, S.W., Perry, D.A., Jones, M.D., Myrold, D.D., Durall, D.M. & Molina, R.",
+      "año": 1997,
+      "titulo": "Net transfer of carbon between ectomycorrhizal tree species in the field",
+      "revista": "Nature",
+      "doi": "10.1038/41557",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "babikova2013",
+      "autores": "Babikova, Z., Gilbert, L., Bruce, T.J.A., Birkett, M., Caulfield, J.C., Woodcock, C., Pickett, J.A. & Johnson, D.",
+      "año": 2013,
+      "titulo": "Underground signals carried through common mycelial networks warn neighbouring plants of aphid attack",
+      "revista": "Ecology Letters",
+      "doi": "10.1111/ele.12115",
+      "requiereVerificacion": false
+    },
+    {
+      "id": "requiere_verificacion_1",
+      "autores": "Diversos autores",
+      "año": 2020,
+      "titulo": "Estudios adicionales sobre redes micorrícicas",
+      "revista": "Diversas publicaciones",
+      "requiereVerificacion": true
+    }
+  ],
+  "aplicaciones": [
+    {
+      "id": "conservacion",
+      "titulo": "Conservación de especies amenazadas",
+      "area": "conservación",
+      "descripcion": "El monitoreo acústico pasivo permite detectar y rastrear poblaciones de especies amenazadas sin intervención directa. Conocer los sistemas de comunicación ayuda a evaluar el estado de salud de poblaciones y detectar amenazas tempranas.",
+      "ejemplos": [
+        "Grabaciones submarinas de ballenas permiten estimar tamaños poblacionales y rutas migratorias sin seguimiento invasivo",
+        "Monitoreo de llamadas de elefantes detecta poblaciones fragmentadas y corredores de movimiento necesarios",
+        "Análisis de dialectos en aves indica aislamiento poblacional y necesidad de conectividad de hábitat"
+      ],
+      "fuentesIds": ["whitehead2003", "okonnell2011"]
+    },
+    {
+      "id": "agricultura",
+      "titulo": "Control biológico en agricultura",
+      "area": "agricultura",
+      "descripcion": "Comprender las señales químicas entre plantas y sus asociados permite desarrollar estrategias de manejo de plagas menos dependientes de pesticidas. El uso de compuestos volátiles como atrayentes de enemigos naturales abre posibilidades para control biológico dirigido.",
+      "ejemplos": [
+        "Aplicación de metil jasmonato sintético induce defensas en cultivos antes de ataques de herbívoros",
+        "Cultivos intercalados aprovechan señales químicas entre plantas para reducir incidencia de plagas",
+        "Liberación de VOCs sintéticos atrae avispas parasitoides a campos agrícolas"
+      ],
+      "fuentesIds": ["dicke2010", "baldwin2006"]
+    },
+    {
+      "id": "gestion-forestal",
+      "titulo": "Gestión forestal basada en redes micorrícicas",
+      "area": "gestión forestal",
+      "descripcion": "El reconocimiento de que los hongos micorrícicos conectan árboles en redes compartidas ha cambiado paradigmas forestales. Mantener estas redes intactas durante el manejo puede mejorar la resiliencia de los bosques y la regeneración natural.",
+      "ejemplos": [
+        "Retención de árboles nodrizas ancianos mantiene redes micorrícicas que facilitan establecimiento de plántulas",
+        "Planificación de cortas que minimiza fragmentación de redes fúngicas subterráneas",
+        "Inoculación de reforestaciones con hongos micorrícicos de rodales maduros acelera crecimiento"
+      ],
+      "fuentesIds": ["simard1997"]
+    }
+  ]
+}

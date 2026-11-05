@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 45 75 20;
+    --secondary: 107 142 35;
+    --accent: 139 69 19;
+    --background: 253 251 247;
+    --surface: 255 255 255;
+    --text-primary: 26 26 26;
+    --text-secondary: 74 74 74;
+    --border: 212 197 185;
+  }
+
+  .dark {
+    --primary: 127 176 105;
+    --secondary: 168 198 134;
+    --accent: 212 165 116;
+    --background: 26 26 26;
+    --surface: 42 42 42;
+    --text-primary: 232 232 232;
+    --text-secondary: 176 176 176;
+    --border: 58 58 58;
+  }
+
+  * {
+    @apply border-[rgb(var(--border))];
+  }
+
+  body {
+    @apply bg-[rgb(var(--background))] text-[rgb(var(--text-primary))] transition-colors duration-300;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-[rgb(var(--surface))] rounded-lg shadow-md p-6 border transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-lg hover:scale-[1.02];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
