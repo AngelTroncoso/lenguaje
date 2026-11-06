@@ -1,8 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import ThemeToggle from '../ThemeToggle';
+import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
+const ThemeToggle = dynamic(() => import('../ThemeToggle'), {
+  ssr: false,
+  loading: () => (
+    <div className="p-2 w-9 h-9" />
+  ),
+});
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
