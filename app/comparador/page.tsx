@@ -2,8 +2,11 @@ import ComparadorTable from '@/components/ComparadorTable';
 import ComparadorCards from '@/components/ComparadorCards';
 import DisclaimerNote from '@/components/DisclaimerNote';
 import data from '@/data/casos.json';
+import { DataSet } from '@/types';
 
 export default function ComparadorPage() {
+  const typedData = data as unknown as DataSet;
+  
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-7xl mx-auto">
@@ -20,20 +23,20 @@ export default function ComparadorPage() {
         
         {/* Tabla para desktop */}
         <div className="hidden lg:block mt-12">
-          <ComparadorTable casos={data.casos} fuentes={data.fuentes} />
+          <ComparadorTable casos={typedData.casos} fuentes={typedData.fuentes} />
         </div>
         
         {/* Tarjetas para mobile/tablet */}
         <div className="lg:hidden mt-12">
-          <ComparadorCards casos={data.casos} fuentes={data.fuentes} />
+          <ComparadorCards casos={typedData.casos} fuentes={typedData.fuentes} />
         </div>
         
         <div className="mt-12 text-center">
           <p className="text-sm text-[rgb(var(--text-secondary))] mb-4">
-            Última actualización: {data.metadatos.ultimaActualizacion}
+            Última actualización: {typedData.metadatos.ultimaActualizacion}
           </p>
           <p className="text-sm text-[rgb(var(--text-secondary))] italic">
-            {data.metadatos.notaMetodologica}
+            {typedData.metadatos.notaMetodologica}
           </p>
         </div>
       </div>

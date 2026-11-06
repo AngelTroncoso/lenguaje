@@ -1,7 +1,10 @@
 import RelevanciaBlock from '@/components/RelevanciaBlock';
 import data from '@/data/casos.json';
+import { DataSet } from '@/types';
 
 export default function RelevanciaPage() {
+  const typedData = data as unknown as DataSet;
+  
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-6xl mx-auto">
@@ -16,8 +19,8 @@ export default function RelevanciaPage() {
         </p>
         
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-          {data.aplicaciones.map((app) => (
-            <RelevanciaBlock key={app.id} aplicacion={app} fuentes={data.fuentes} />
+          {typedData.aplicaciones.map((app) => (
+            <RelevanciaBlock key={app.id} aplicacion={app} fuentes={typedData.fuentes} />
           ))}
         </div>
         

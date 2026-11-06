@@ -1,12 +1,15 @@
 import CasoCard from '@/components/CasoCard';
 import DisclaimerNote from '@/components/DisclaimerNote';
 import data from '@/data/casos.json';
+import { DataSet } from '@/types';
 
 export default function CasosPage() {
+  const typedData = data as unknown as DataSet;
+  
   const casosPorCategoria = {
-    animales: data.casos.filter(c => c.categoria === 'animales'),
-    plantas: data.casos.filter(c => c.categoria === 'plantas'),
-    hongos: data.casos.filter(c => c.categoria === 'hongos'),
+    animales: typedData.casos.filter(c => c.categoria === 'animales'),
+    plantas: typedData.casos.filter(c => c.categoria === 'plantas'),
+    hongos: typedData.casos.filter(c => c.categoria === 'hongos'),
   };
 
   return (
@@ -33,7 +36,7 @@ export default function CasosPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {casosPorCategoria.animales.map((caso) => (
-              <CasoCard key={caso.id} caso={caso} fuentes={data.fuentes} />
+              <CasoCard key={caso.id} caso={caso} fuentes={typedData.fuentes} />
             ))}
           </div>
         </section>
@@ -48,7 +51,7 @@ export default function CasosPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {casosPorCategoria.plantas.map((caso) => (
-              <CasoCard key={caso.id} caso={caso} fuentes={data.fuentes} />
+              <CasoCard key={caso.id} caso={caso} fuentes={typedData.fuentes} />
             ))}
           </div>
         </section>
@@ -63,7 +66,7 @@ export default function CasosPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {casosPorCategoria.hongos.map((caso) => (
-              <CasoCard key={caso.id} caso={caso} fuentes={data.fuentes} />
+              <CasoCard key={caso.id} caso={caso} fuentes={typedData.fuentes} />
             ))}
           </div>
         </section>

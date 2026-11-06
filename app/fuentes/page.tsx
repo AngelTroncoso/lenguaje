@@ -1,9 +1,12 @@
 import FuenteItem from '@/components/FuenteItem';
 import data from '@/data/casos.json';
+import { DataSet } from '@/types';
 
 export default function FuentesPage() {
+  const typedData = data as unknown as DataSet;
+  
   // Ordenar fuentes alfabéticamente por autor
-  const fuentesOrdenadas = [...data.fuentes].sort((a, b) => {
+  const fuentesOrdenadas = [...typedData.fuentes].sort((a, b) => {
     const autorA = a.autores.toLowerCase();
     const autorB = b.autores.toLowerCase();
     return autorA.localeCompare(autorB);
@@ -24,10 +27,10 @@ export default function FuentesPage() {
         <div className="card mb-8">
           <h2 className="font-serif text-xl font-bold mb-3">Nota Metodológica</h2>
           <p className="text-sm text-[rgb(var(--text-secondary))] leading-relaxed mb-3">
-            {data.metadatos.notaMetodologica}
+            {typedData.metadatos.notaMetodologica}
           </p>
           <p className="text-xs text-[rgb(var(--text-secondary))] italic">
-            Última actualización: {data.metadatos.ultimaActualizacion} • Versión: {data.metadatos.version}
+            Última actualización: {typedData.metadatos.ultimaActualizacion} • Versión: {typedData.metadatos.version}
           </p>
         </div>
         
